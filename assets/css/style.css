@@ -1,0 +1,235 @@
+:root{
+    --bg-dark: #0a0f0d;
+    --bg-card: #111815;
+    --accent-green: #00ff66;
+    --text-main: #e0e6e3;
+    --terminal-border: #1f3a2b;
+}
+
+body{
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.outline-top{
+    border-top: 1px solid var(--terminal-border);
+}
+
+.outline-dotted{
+    border: 3px dotted var(--accent-green)
+}
+
+.fs-xl{
+    font-size: 60px;
+}
+
+.btn-outline-primary{
+    color: var(--accent-green);
+    border-color: var(--accent-green);
+}
+
+.btn-outline-primary:hover{
+    color: var(--bg-dark);
+    border-color: var(--accent-green);
+    background-color: var(--accent-green);
+}
+
+.text-green{
+    color: var(--accent-green);
+}
+
+.text-white{
+    color: var(--text-main);
+}
+
+.navbar{
+    padding: 15px;
+    border-bottom: 1px solid var(--terminal-border);
+    background-color: var(--bg-dark);
+}
+
+.navbar-brand{
+    color: var(--text-main);
+}
+
+.navbar-brand:hover{
+    color: var(--accent-green);
+}
+
+.nav-link{
+    color: var(--text-main);
+}
+
+.nav-link:hover{
+    color: var(--accent-green);
+}
+
+.navbar-toggler{
+    border-color: var(--text-main);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.hero-section{
+    min-height: 70vh;
+    padding: 100px 0px;
+}
+
+.terminal{
+    background-color: var(--bg-card);
+    border: 1px solid var(--terminal-border);
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.terminal-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    border-bottom: 1px solid var(--terminal-border);
+    padding-bottom: 10px;
+}
+
+.terminal-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-dot-red{
+    background-color: #ff0000;
+}
+
+.terminal-dot-orange{
+    background-color: #ffa500;
+}
+
+.terminal-dot-green{
+    background-color: #00ff00;
+}
+
+.slika{
+    width: 250px;
+    height: 300px;
+}
+
+.card{
+    border: 1px solid var(--terminal-border);
+    background-color: var(--bg-card);
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    border-color: var(--accent-green);
+    transform: translateY(-5px);
+}
+
+.obrazovanje-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.obrazovanje-flex .card{
+    flex: 1 1 250px;
+}
+
+.vestine-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.projekti-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.projekti-card{
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    min-height: 210px;
+}
+
+.projekti-card .btn{
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.form-control{
+    background-color: var(--bg-card) !important;
+    border-color: var(--terminal-border) !important;
+    color: var(--accent-green) !important;
+}
+
+.form-control:focus{
+    border-color: var(--accent-green) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control::placeholder{
+    color: #6c757d;
+}
+
+footer a:hover{
+    color: var(--text-main) !important;
+}
+
+@media (max-width: 576px) {
+    .fs-xl {
+        font-size: calc(1.8rem + 3vw) !important; 
+    }
+    .hero-section .terminal {
+        padding: 1.5rem !important;
+        text-align: center;
+    }
+    .vestine-grid{
+        grid-template-columns: 1fr;
+    }
+    .obrazovanje-flex,
+    .projekti-flex{
+        flex-direction: column;
+    }
+    .projekti-card{
+        align-items: center;
+        text-align: center;
+        min-height: 0;
+    }
+    .projekti-card .btn{
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px){
+    .vestine-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .fs-xl {
+        font-size: 3rem !important;
+    }
+    .projekti-card{
+        align-items: center;
+        text-align: center;
+        min-height: 0;
+    }
+    .projekti-card .btn{
+        align-self: center;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Vukašin Veljković 138/25</title>
+         <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+        <!-- Glavni CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">&lt;veljković.v&gt;</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#o-meni">// O meni</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#obrazovanje">// Obrazovanje</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#vestine">// Veštine</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projekti">// Projekti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontakt">// Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero-section container">
+            <div class="terminal">
+                <div class="terminal-menu">
+                    <div class="terminal-dot terminal-dot-red"></div>
+                    <div class="terminal-dot terminal-dot-orange"></div>
+                    <div class="terminal-dot terminal-dot-green"></div>
+                </div>
+                <p class="text-green mt-3">vule@localhost:~$ cat portfolio.html</p>
+                <h1 class="fs-xl">Zdravo, ja sam <span class="text-green">Vukašin</span></h1>
+                <h2 class="fs-4">Student na visokoj ICT školi</h2>
+                <p class="text-secondary">Specijalizujem se za low-level i socket programiranje.</p>
+                <a href="#kontakt" class="btn btn-outline-primary btn-lg mt-2">STUPIMO U KONTAKT</a>
+            </div>
+        </header>
+
+        <section class="p-5 container outline-top" id="o-meni">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-9">
+                    <h2 class="text-green mb-4">[01] O meni</h2>
+                    <p>Strastveni programer fokusiran na unutrašnje funkcionisanje računarskih sistema i mreža. Moje glavno polje istraživanja obuhvata programski jezik C, analizu mrežnog saobraćaja i konfiguraciju virtuelnih okruženja.</p>
+                    <p>Proučavam i istražujem svet računarskih i mrežnih tehnologija, težeći ka pisanju optimizovanog koda visokih performansi.</p>
+                </div>
+                <div class="col-md-3 p-0 outline-dotted">
+                    <img class="img-fluid" src="assets/img/slika.png" loading="lazy" alt="Slika"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 container outline-top">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" id="obrazovanje">
+                    <h2 class="text-green mb-4">[02] Obrazovanje</h2>
+                    <div class="obrazovanje-flex">
+                        <div class="card">
+                            <p class="text-green">2025 - Trenutno</p>
+                            <h3 class="fs-5 text-white">Visoka ICT škola</h3>
+                            <p class="text-secondary">Smer - Programer Internet Tehnologija</p>
+                        </div>
+                        <div class="card">
+                            <p class="text-green">2020 - 2024</p>
+                            <h3 class="fs-5 text-white">Mašinsko-Elektrotehnička škola</h3>
+                            <p class="text-secondary">Smer - Elektrotehničar Multimedija</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="vestine">
+                    <h2 class="text-green mb-4">[03] Tehnologije i Veštine</h2>
+                    <div class="vestine-grid text-center">
+                        <div class="card"><p class="text-green">C/C++</p></div>
+                        <div class="card"><p class="text-green">Assembly</p></div>
+                        <div class="card"><p class="text-green">Python</p></div>
+                        <div class="card"><p class="text-green">Java</p></div>
+                        <div class="card"><p class="text-green">Linux / Bash</p></div>
+                        <div class="card"><p class="text-green">Sockets</p></div>
+                        <div class="card"><p class="text-green">TCP/IP</p></div>
+                        <div class="card"><p class="text-green">Virt-Manager</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 container outline-top" id="projekti">
+            <h2 class="text-green mb-4">[04] Projekti</h2>
+            <div class="projekti-flex">
+                <div class="card projekti-card">
+                    <h3 class="fs-5 text-green">Port Scanner</h3>
+                    <p class="text-secondary">Brzi, jednostavni skener mrežnih portova napisan u C jeziku korišćenjem sirovih soketa.</p>
+                    <a href="https://github.com/vukasinveljkovic/portscanner" target="_blank" class="btn btn-outline-primary mt-3">Source Code</a>
+                </div>
+                <div class="card projekti-card">
+                    <h3 class="fs-5 text-green">Linux Keylogger</h3>
+                    <p class="text-secondary">Sistemski keylogger implementiran u C-u koji beleži ulazne događaje koji dolaze sa tastature.</p>
+                    <a href="https://github.com/vukasinveljkovic/keylogger" target="_blank" class="btn btn-outline-primary mt-3">Source Code</a>
+                </div>
+                <div class="card projekti-card">
+                    <h3 class="fs-5 text-green">Terminal Chat</h3>
+                    <p class="text-secondary">Terminal aplikacija za komunikaciju putem konzole u realnom vremenu preko mrežnih protokola.</p>
+                    <a href="https://github.com/vukasinveljkovic/chat-app-in-C" target="_blank" class="btn btn-outline-primary mt-3">Source Code</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 container outline-top" id="kontakt">
+            <div class="row justify-content-center">
+                <h2 class="text-green text-center mb-4">[05] Kontakt</h2>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="ime" class="text-white">// Ime</label>
+                            <input type="text" name="ime" class="form-control" placeholder="Petar Petrović" id="ime" required />
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="email" class="text-white">// Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="example@email.com" id="email" required />
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="poruka" class="text-white">// Poruka</label>
+                            <textarea name="poruka" id="poruka" placeholder="Poštovani..." class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button class="btn btn-outline-primary w-100 mt-4" type="submit">Pošalji</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="p-5 container outline-top">
+            <div class="row justify-content-between">
+                <div class="col-md-7">
+                    <p class="text-secondary">&copy; 2026 Vukašin Veljković | Sva prava zadržana.</p>
+                </div>
+                <div class="col-md-4 text-md-end text-center">
+                    <ul class="list-unstyled list-inline m-0">
+                        <li class="list-inline-item"><a href="https://github.com/vukasinveljkovic/" target="_blank" class="text-secondary text-decoration-none">GitHub</a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/vukasinveljkovic/" target="_blank" class="text-secondary text-decoration-none">LinkedIn</a></li>
+                        <li class="list-inline-item"><a href="kontrolna_lista_vukasin_veljkovic_138_25.pdf" target="_blank" class="text-secondary text-decoration-none">[ Kontrolna Lista PDF ]</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
